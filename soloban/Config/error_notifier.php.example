@@ -1,0 +1,37 @@
+<?php
+// This is example config for error_notifier
+// If you want to turn on system auto send email warning error when error occurs, please move copy this file and move to folder environment
+// Example: Config/testing/error_notifier.php
+
+/**
+ * Config Error notifier
+ */
+return [
+    'sendable' => true,
+    'project' => 'Soloban',
+    'masked_parameters' => [
+        'password' // These config use for masked security data of user like password, credit card ....
+    ],
+    'driver' => 'email',
+    'driver_config' => [
+        // Transport config is a public variable on email config
+        // Example file email config at Config/email.php
+        // class EmailConfig
+        //   {
+        //       public $notifier = array(
+        //           'transport' => 'Smtp',
+        //           'host' => 'mail.rdcl-opti.co.jp',
+        //           'port' => 587,
+        //           'timeout' => 30,
+        //           'log' => false,
+        //           'username' => 'email',
+        //           'password' => 'password'
+        //       );
+        //   }
+
+        'transport' => 'notifier',
+        'from' => ['pos-incident@crony.jp' => 'Soloban（Testing）'],
+        'to' => ['duytt@nal.vn', 'vunt@nal.vn']
+    ]
+];
+
