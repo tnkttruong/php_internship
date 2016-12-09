@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fields</title>
+    <style type="text/css" media="screen">
+        .right {
+            width: 70%;
+            text-align: justify;
+            padding: 6px;
+        }
+
+        .left {
+            width: 30%;
+            text-align: left;
+            padding: 6px;
+            background-color: #EEF0F5;
+        }
+
+        table {
+            border-style: solid;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ddd !important;
+        }
+
+        table > th,
+        td {
+            border: 1px solid #ddd !important;
+            margin: 0;
+        }
+
+        .right input {
+            width: 97%;
+            padding: 6px;
+        }
+
+        .right select {
+            width: 100%;
+        }
+
+        .radio {
+            padding: 6px;
+        }
+
+        tbody {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<form method="get" accept-charset="utf-8">
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <td class="left">Username *</td>
+            <td class="right">
+                <select name="values">
+                    <option value="tran thanh">tran thanh</option>
+                    <option value="tuong vy">tuong vy</option>
+                    <option value="le hoai">le hoai</option>
+                    <option value="le quyen">le quyen</option>
+                </select>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="left">Password *</td>
+            <td class="right">
+                <input type="text" name="" placeholder="Input your password">
+            </td>
+        </tr>
+        <tr>
+            <td class="left">Password *</td>
+            <td class="right">
+                <input type="text" name="" placeholder="Input your password">
+            </td>
+        </tr>
+        <tr>
+            <td class="left">Password *</td>
+            <td class="right">
+                <input type="text" name="" placeholder="Input your password">
+            </td>
+        </tr>
+        <tr>
+            <td class="left">Password *</td>
+            <td class="right">
+                <input type="text" name="" placeholder="Input your password">
+            </td>
+        </tr>
+        <tr>
+            <td class="left">Ban dang hoc ngon ngu gi?</td>
+            <td class="radio">
+                <input type="radio" name="PHP"> PHP
+                <input type="radio" name="C#"> C#
+                <input type="radio" name="Java"> Java
+            </td>
+        </tr>
+        <tr>
+            <td class="left">Ban co thich PHP khong?</td>
+            <td class="radio">
+                <input type="checkbox" name="" value=""> Co.
+            </td>
+        </tr>
+        <tr>
+            <td class="left">Ban co thich PHP khong?</td>
+            <td class="radio">
+                <input type="checkbox" name="" value=""> Co.
+            </td>
+        </tr>
+        <tr>
+            <td class="left">Ban co thich PHP khong?</td>
+            <td class="radio">
+                <input type="checkbox" name="" value=""> Co.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+
+</html>
