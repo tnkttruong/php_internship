@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function(){
+            $( ".form-control" ).datepicker();
+        } );
+    </script>
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu" style="width: 1336px;padding-top: 20px">
+                                <form class="form-horizontal" role="form">
+                                        <div class="col-md-6 ">
+                                            <table class="table table-hover" >
+                                                <tr class="row" style="border: 1px solid #ececec">
+                                                    <td class="col-md-2" style="background:#eef1f5 ">Thời hạn</td>
+                                                    <td class="col-md-10">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="form-group" style="width:200px;padding-left: 20px; ">
+                                                                    <div class='input-group date' id='datetimepicker_one'>
+                                                                        <input type='text' class="form-control" />
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2" style="text-align: center;font-size: 30px; padding-left: 20px;padding-right: 50px;" >~</div>
+                                                            <div class="col-md-5">
+                                                                <div class="form-group" style="width:200px">
+                                                                    <div class='input-group date' id='datetimepicker_two'>
+                                                                        <input type='text' class="form-control" />
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                                         </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row" style="border: 1px solid #ececec">
+                                                    <td class="col-md-2" style="background:#eef1f5 ">Hết hạn</td>
+                                                    <td class="col-md-10">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="form-group" style="width:200px;padding-left: 20px; ">
+                                                                    <div class='input-group date' id='datetimepicker_three'>
+                                                                        <input type='text' class="form-control" />
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2" style="text-align: center;font-size: 30px; padding-left: 20px;padding-right: 50px;" >~</div>
+                                                            <div class="col-md-5">
+                                                                <div class="form-group" style="width:200px">
+                                                                    <div class='input-group date' id='datetimepicker_four'>
+                                                                        <input type='text' class="form-control" />
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                                         </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                    <td class="col-md-2" style="background:#eef1f5 ">Chọn ngành</td>
+                                                    <td class="col-md-10">
+                                                        <div class="row" style="padding-left: 20px;">
+                                                            <label class="checkbox-inline"><input type="checkbox" value="" style="width: 15px;height: 15px;">Option 1</label>
+                                                            <label class="checkbox-inline"><input type="checkbox" value=""style="width: 15px;height: 15px;">Option 2</label>
+                                                            <label class="checkbox-inline"><input type="checkbox" value=""style="width: 15px;height: 15px;">Option 3</label>
+                                                            <label class="checkbox-inline"><input type="checkbox" value=""style="width: 15px;height: 15px;">Option 4</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                    <td class="col-md-2" style="background:#eef1f5 ">Nhập tên</td>
+                                                    <td class="col-md-10">
+                                                        <div class="row" style="padding-left: 20px;">
+                                                            <input style="width: 500px;height: 40px;">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                    <td class="col-md-2" style="background:#eef1f5 ">Nhập username</td>
+                                                    <td class="col-md-10">
+                                                        <div class="row" style="padding-left: 20px;">
+                                                            <input style="width: 500px;height: 40px; " placeholder="nguyenthituongvy">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                    <td class="col-md-2" style="background:#eef1f5 ">Chọn ngành</td>
+                                                    <td class="col-md-10">
+                                                        <div class="row" style="padding-left: 20px;">
+                                                            <label class="checkbox-inline"><input type="checkbox" value="" style="width: 15px;height: 15px;">Option 1 tuong vy</label>
+                                                            <label class="checkbox-inline"><input type="checkbox" value=""style="width: 15px;height: 15px;">Option 2 le hoai</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 ">
+                                        <table class="table table-hover">
+                                            <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                <td class="col-md-2" style="background:#eef1f5 ">Nhập username</td>
+                                                <td class="col-md-10">
+                                                    <div class="row" style="padding-left: 20px;">
+                                                        <input style="width: 500px;height: 40px; " placeholder="nguyenthituongvy">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                <td class="col-md-2" style="background:#eef1f5 ">Nhập username</td>
+                                                <td class="col-md-10">
+                                                    <div class="row" style="padding-left: 20px;">
+                                                        <input style="width: 500px;height: 40px; " placeholder="nguyenthituongvy">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                <td class="col-md-2" style="background:#eef1f5 ">Nhập username</td>
+                                                <td class="col-md-10">
+                                                    <div class="row" style="padding-left: 20px;">
+                                                        <input style="width: 500px;height: 40px; " placeholder="nguyenthituongvy">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="row" style="border: 1px solid #ececec ;height: 66px;" >
+                                                <td class="col-md-2" style="background:#eef1f5 ">Chọn ngành</td>
+                                                <td class="col-md-10">
+                                                    <div class="row" style="padding-left: 20px;">
+                                                        <div class="radio">
+                                                            <label><input type="radio" name="optradio" style="width: 15px;height: 15px;">Option 1</label>
+                                                            <label><input type="radio" name="optradio" style="width: 15px;height: 15px;">Option 1</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                        <div class="col-md-12" style="text-align: center;line-height: 50px;">
+                                            <div style="display: inline ;padding-right: 30px;">
+                                                <button type="button" class="btn btn-primary">Primary</button>
+                                            </div>
+                                            <button type="button" class="btn btn-success">Success</button>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
