@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXAMPLE BOOTSTRAP</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <style>
+        .color_td{
+            background-color: #eef1f5;
+        }
+        .button{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-search">&nbsp;Search</span></a>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="table table-bordered">
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left color_td">Thời gian đăng kí</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="input-group date" data-provide="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="input-group date" data-provide="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left color_td">Thời gian đào tạo</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="input-group date" data-provide="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="input-group date" data-provide="datepicker">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left color_td">Bạn muốn đăng kí ngôn ngữ nào?</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; PHP
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; Java
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; C#
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; Python
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; Ruby
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col-sm-4 col-md-4 left color_td">Họ và tên</td>
+                    <td class="col-sm-8 col-md-8">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left color_td">Email</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" placeholder="abc@gmail.com">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left color_td">Bạn muốn học fulltime chứ?</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <input type="checkbox" name="" value="">&nbsp; Có
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <input type="checkbox" name="" value="">&nbsp; Không
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="table table-bordered">
+                </tr>
+                <tr class="row">
+                    <td class="col-xs-6 col-sm-3 col-md-3 left color_td">Tên đăng nhập</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nameUser">
+                        </div>
+                    </td>
+                </tr>
+                </tr>
+                <tr class="row">
+                    <td class="col-xs-6 col-sm-3 col-md-3 left color_td">Nhập mật khẩu</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="pass">
+                        </div>
+                    </td>
+                </tr>
+                </tr>
+                <tr class="row">
+                    <td class="col-xs-6 col-sm-3 col-md-3 left color_td">Nhập lại mật khẩu</td>
+                    <td class="col-xs-6 col-sm-9 col-md-9">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="passAgain">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col-xs-6 col-sm-4 col-md-4 left color_td">Quê bạn ở đâu?</td>
+                    <td class="col-xs-6 col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="radio" name="" value="" placeholder="">&nbsp; Quảng trị
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="radio" name="" value="" placeholder="">&nbsp;Đà Nẵng
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="radio" name="" value="" placeholder="">&nbsp;Huế
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="button">
+    <a href="#" class="btn btn-primary btn-lg active" role="button">Confirm</a>
+    <a href="#" class="btn btn-default btn-lg active" role="button">Back</a>
+</div>
+</body>
