@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function maxOfThree</title>
+    <style>
+        div
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div style="color: red">Max number of three number is : </div>
+    <div style="color: #4cff00" id="show_screen"></div>
+    <script>
+        function functionmaxOfThree(a,b,c) {
+            var max = ( a > b ? a : b );
+            return result = ( max > c ? max : c );
+        }
+        document.getElementById("show_screen").innerHTML = functionmaxOfThree(3,7,2);
+    </script>
+</body>
+</html>
