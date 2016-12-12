@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Bootstrap</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.js"></script> -->
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.3.1.1.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
+          rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $('#dateTimePicker1').datetimepicker();
+                $('#dateTimePicker2').datetimepicker();
+                $('#dateTimePicker3').datetimepicker();
+                $('#dateTimePicker4').datetimepicker();
+            });
+        });
+
+        function showDetails() {
+            $(".dropDownCustomize").css("visibility", "visible");
+        }
+        ;
+
+        function testShowDetails() {
+            $(".dropDownCustomize").toggle(200);
+        }
+        ;
+
+        function notShowDetails() {
+            $(".dropDownCustomize").css("visibility", "hidden");
+        }
+    </script>
+</head>
+
+<body>
+<div class="container xam">
+    <div class="row">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-search">&nbsp;Search</span></a>
+            <!-- <button type="button" class="btn btn-default glyphicon glyphicon-menu-down pull-right">Left</button> -->
+        </div>
+        <span ondblclick="showDetails()" onclick="notShowDetails()"
+              class="glyphicon glyphicon-triangle-bottom pull-right showDropDown"></span>
+        <!-- showDropDown la de hien cai dropDownCustomize -->
+    </div>
+</div>
+<!-- end .container -->
+<div class="container dropDownCustomize">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="table table-hover">
+                <tbody>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left">Thoi gian hoc tai truong?</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <div class='input-group date' id='dateTimePicker1'>
+                                        <input type='text' class="form-control"/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <div class='input-group date' id='dateTimePicker2'>
+                                        <input type='text' class="form-control"/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!-- end row in table-->
+                <tbody>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left">Thoi gian thuc tap?</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <div class='input-group date' id='dateTimePicker3'>
+                                        <input type='text' class="form-control"/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <div class='input-group date' id='dateTimePicker4'>
+                                        <input type='text' class="form-control"/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!-- end row in table-->
+                <tbody>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left">Ban thich hoc ngo ngon ngu nao?</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; PHP
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; Java
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; C#
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; Ruby
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="checkbox" name="" value="">&nbsp; JavaScript
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!-- end row in table-->
+                <tbody>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left">Nhap vao ten cua ban:</td>
+                    <td class="col-sm-9 col-md-9">
+                        <input style="width: 100%;" type="text" name="" value="" placeholder="">
+                    </td>
+                </tr>
+                </tbody>
+                <!-- end row in table-->
+                <tbody>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left">Nhap vao Email cua ban:</td>
+                    <td class="col-sm-9 col-md-9">
+                        <input style="width: 100%;" type="text" name="" value="" placeholder="abc_xyz@gmail.com">
+                    </td>
+                </tr>
+                </tbody>
+                <!-- end row in table-->
+                <tbody>
+                <tr class="row">
+                    <td class="col-sm-3 col-md-3 left">Do you want join NAL Solutions?</td>
+                    <td class="col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <input type="checkbox" name="" value="">&nbsp;Co.
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <input type="checkbox" name="" value="">&nbsp;Khong.
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!-- end row in table-->
+            </table>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="table table-hover">
+                <tbody>
+                <tr class="row">
+                    <th class="col-xs-6 col-sm-3 col-md-3 left">Nhap vao ID thu nhat:</th>
+                    <th class="col-sm-9 col-md-9">
+                        <input type="text" style="width: 100%;" name="" value="" placeholder="21047,21059">
+                    </th>
+                </tr>
+                </tbody>
+                <!-- end row in table -->
+                <tbody>
+                <tr class="row">
+                    <th class="col-xs-6 col-sm-3 col-md-3 left">Nhap vao ID thu 2:</th>
+                    <th class="col-sm-9 col-md-9">
+                        <input type="text" style="width: 100%;" name="" value="" placeholder="188,232">
+                    </th>
+                </tr>
+                </tbody>
+                <!-- end row in table -->
+                <tbody>
+                <tr class="row">
+                    <th class="col-xs-6 col-sm-3 col-md-3 left">Nhap vao Ten:</th>
+                    <th class="col-xs-6 col-sm-9 col-md-9">
+                        <input type="text" style="width: 100%;" name="" value="" placeholder="Thanh dep trai(^_^)">
+                    </th>
+                </tr>
+                </tbody>
+                <!-- end row in table -->
+                <tbody>
+                <tr class="row">
+                    <th class="col-xs-6 col-sm-3 col-md-3 left">Ban que o dau:</th>
+                    <th class="col-xs-6 col-sm-9 col-md-9">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="radio" name="" value="" placeholder="">&nbsp;Nghe An
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="radio" name="" value="" placeholder="">&nbsp;Ha Noi
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <input type="radio" name="" value="" placeholder="">&nbsp;Da Nang
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                </tbody>
+                <!-- end row in table -->
+            </table>
+            <!-- end table -->
+        </div>
+    </div>
+    <!-- end .row -->
+</div>
+<!-- end .container -->
+</body>
+
+</html>

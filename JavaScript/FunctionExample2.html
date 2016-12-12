@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+
+<body>
+    <h3>So lon nhat cua 3 so la:</h3>
+    <h3 id="show"></h3>
+    <script>
+        function myfunction(a, b, c) {
+            var d = 0;
+            return ((d = (a >= b) ? a : b) >= c) ? d : c;
+        }
+        document.getElementById('show').innerHTML = myfunction(10, 12, 6);
+    </script>
+</body>
+
+</html>

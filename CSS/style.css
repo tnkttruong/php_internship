@@ -1,0 +1,25 @@
+.xam {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    color: inherit;
+    background-color: #eee;
+}
+
+.left {
+    background-color: #EEF0F5;
+}
+
+table {
+    border-style: 1px solid #E7EAF1;
+    margin: 0;
+}
+
+.showDropDown {
+    padding-right: 15px;
+    padding: 10px;
+}
+.dropDownCustomize {
+    visibility: hidden;
+}
